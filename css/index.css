@@ -120,26 +120,8 @@
 
 ***/
 
-.services-section{
+.services_section{
 	margin-top: 100px !important;
-	position:relative;
-	padding:60px 0px 60px;
-	background-color:#141d38;
-}
-
-.services-section.margin-top{
-	margin-top:-65px;
-}
-
-.services-section .pattern-layer{
-	position:absolute;
-	right:0px;
-	top:0px;
-	width:100%;
-	height:100%;
-	display:block;
-	background-repeat:no-repeat;
-	background-position:right top;
 }
 
 
@@ -521,80 +503,66 @@ color: #2b7bfc !important;
       transition-delay: 500ms;
     }
   }
+  
 
+  /* ag-format start */
 
-  .section_our_solution {
+  .ag-format-container {
+    /* width: 1142px; */
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
+    gap: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    /* padding: 50px 0; */
   }
-  
-  .solution_cards_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .solution_cards_box .solution_card {
-    background: #fff;
-    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
-      0 5px 15px 0 rgba(37, 44, 97, 0.15);
-    border-radius: 15px;
-    margin: 8px;
-    position: relative;
-    z-index: 1;
+
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    /* flex-basis: calc(33.33333% - 30px); */
+    /* margin: 0 15px 30px; */
+    /* margin-bottom: 30px; */
+    width: 425px;
     overflow: hidden;
-    height: 330px;
-    padding:15px 25px;
-    transition: 0.7s;
+    border-radius: 28px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 360px;
+    padding: 15px 15px;
+    background-color: #001D23;
+    position: relative;
+  }
+
+  .so_top_icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
   }
   
-  .solution_cards_box .solution_card:hover {
-    background: #309df0;
-    color: #fff;
-    transform: scale(1.1);
-    z-index: 9;
+   .so_top_icon img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
   }
-  
-  .solution_cards_box .solution_card:hover::before {
-    background: rgb(85 108 214 / 10%);
-  }
-  
-  .solution_cards_box .solution_card:hover .solu_title h3,
-  .solution_cards_box .solution_card:hover .solu_description p {
-    color: #fff;
-  }
-  
-  .solution_cards_box .solution_card:before {
-    content: "";
-    position: absolute;
-    background: rgb(85 108 214 / 5%);
-    width: 170px;
-    height: 400px;
-    z-index: -1;
-    transform: rotate(42deg);
-    right: -56px;
-    top: -23px;
-    border-radius: 35px;
-  }
-  
-  .solution_card .solu_title div {
-    color: #212121;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-top: 13px;
-    margin-bottom: 13px;
-  }
-  
-  .solution_card .solu_description p {
-    font-size: 15px;
-    min-height: 110px;
-    color: #212121;
-  }
-  
+
   .read_more_btn {
     border: 0;
     border-radius: 15px;
@@ -611,156 +579,47 @@ color: #2b7bfc !important;
     cursor: pointer;
   }
 
-.qr_code{
-  width: 70px;
-  height: 70px;
- 
-}
-
-  .solution_cards_box .solution_card:hover .read_more_btn {
-    background: #fff !important;
-    color: #309df0;
-  }
-  
-  .our_solution_content div {
-    text-transform: capitalize;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-  }
-
-  .hover_color_bubble {
-    position: absolute;
-    background: rgba(53, 56, 236, 0.137);
-    /* background: #309df0; */
-    width: 100rem;
-    height: 100rem;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    top: 16rem;
-    border-radius: 50%;
-    transform: rotate(-36deg);
-    left: -18rem;
-    transition: 0.7s;
-  }
-  
-  .solution_cards_box .solution_card:hover .hover_color_bubble {
-    top: 0rem;
-  }
-  
-  .solution_cards_box .solution_card .so_top_icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .solution_cards_box .solution_card .so_top_icon img {
-    width: 60px;
-    height: 50px;
-    object-fit: contain;
-  }
-
-  .ag-format-container {
-    /* width: 1142px; */
-    max-width: 70%;
-    margin: 0 auto;
-  }
-  
-  
-  /* body {
-    background-color: #000;
-  } */
-
-  .ag-courses_box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  
-    padding: 50px 0;
-  }
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
-  
-    margin: 0 15px 30px;
-  
-    overflow: hidden;
-  
-    border-radius: 28px;
-    display: block;
-    padding: 30px 20px;
-    background-color: #121212;
-    position: relative;
-  }
-
-  /* .ag-courses-item:hover >a{
-    background: #fff !important;
-    color: #309df0;
-    z-index: 1000 !important;
-  } */
-
-  .ag-courses-item_link:hover,
-.ag-courses-item_link:hover a{
+  .ag-courses_item:hover,
+.ag-courses_item:hover a>button{
   background: #fff !important;
   color: #309df0;
-  z-index: 1000 !important;
 }
 
-
-
-  /* .ag-courses-item_link {
-    display: block;
-    padding: 30px 20px;
-    background-color: #121212;
-  
-    overflow: hidden;
-  
-    position: relative;
-  } */
-  .ag-courses-item_link:hover,
-  .ag-courses-item_link:hover .ag-courses-item_date {
+  .ag-courses_item:hover,
+  .ag-courses_item:hover .ag-courses-item_date {
     text-decoration: none;
     color: #FFF;
   }
-  .ag-courses-item_link:hover .ag-courses-item_bg {
+
+  .ag-courses_item:hover .ag-courses-item_bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
     transform: scale(10);
   }
+
   .ag-courses-item_title {
-    min-height: 87px;
-    margin: 0 0 25px;
-  
+    /* min-height: 87px; */
     overflow: hidden;
-  
     font-weight: bold;
     font-size: 30px;
     color: #FFF;
-  
     z-index: 2;
     position: relative;
   }
   .ag-courses-item_date-box {
     font-size: 18px;
-    color: #FFF;
-  
     z-index: 2;
     position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: column
+
   }
   .ag-courses-item_date {
+    height: 130px;
     font-weight: bold;
     color: #f9b234;
-  
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
     transition: color .5s ease
@@ -769,14 +628,11 @@ color: #2b7bfc !important;
     height: 128px;
     width: 128px;
     background-color: #f9b234;
-  
     z-index: 1;
     position: absolute;
     top: -75px;
     right: -75px;
-  
     border-radius: 50%;
-  
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
@@ -794,89 +650,15 @@ color: #2b7bfc !important;
     background-color: #cd3e94;
   }
   .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-    background-color: #4c49ea;
+    background-color: #0060ff;
   }
   
   
-  
-  @media only screen and (max-width: 979px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-    }
-    .ag-courses-item_title {
-      font-size: 24px;
-    }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .ag-format-container {
-      width: 96%;
-    }
-  
-  }
-  @media only screen and (max-width: 639px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-    }
-    .ag-courses-item_title {
-      min-height: 72px;
-      line-height: 1;
-  
-      font-size: 24px;
-    }
-    .ag-courses-item_link {
-      padding: 22px 40px;
-    }
-    .ag-courses-item_date-box {
-      font-size: 16px;
-    }
-  }
-
 
   
   /*start media*/
-  @media screen and (min-width: 320px) {
-    .sol_card_top_3 {
-      position: relative;
-      top: 0;
-    }
-  
-    .our_solution_category {
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    .our_solution_category .solution_cards_box {
-      flex: auto;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .our_solution_category .solution_cards_box {
-      flex: 1;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .sol_card_top_3 {
-      position: relative;
-      top: -3rem;
-    }
-  
-    .our_solution_category {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-
-
-
-
   @media only screen and (max-width: 1800px) {
     .sector__card {
-
         max-width: 36rem;
         max-height: 28.125rem;
       }
@@ -940,12 +722,28 @@ color: #2b7bfc !important;
   .swiper__wrapper2{
     margin-left: 10px;
   }
+
+  .sol_card_top_3 {
+    position: relative;
+    top: -3rem;
+  }
+
+  .our_solution_category {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .call-to-action-section .button-column{
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .ag-courses-item_title {
+    font-size: 24px;
   }
 }
 
@@ -968,6 +766,23 @@ color: #2b7bfc !important;
   .swiper__wrapper2{
     margin-left: 17px;
   }
+
+  .our_solution_category .solution_cards_box {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses-item_title {
+    line-height: 1;
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -975,7 +790,6 @@ color: #2b7bfc !important;
     margin-left: 90px;
   }
 }
-
 
 @media only screen and (max-width: 485px) {
     .sector__card {
@@ -1034,5 +848,21 @@ color: #2b7bfc !important;
 
   .swiper-slide .clients__box__card {
     margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .sol_card_top_3 {
+    position: relative;
+    top: 0;
+  }
+
+  .our_solution_category {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .our_solution_category .solution_cards_box {
+    flex: auto;
   }
 }

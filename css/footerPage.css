@@ -75,6 +75,11 @@
     color: #1e72fa;
     font-size: 18px;
   }
+
+  .qr_code{
+    width: 70px;
+    height: 70px;
+  }
   
   #footer .footer-top .footer-links ul li {
     border-bottom: 1px solid #262c44;
