@@ -79,6 +79,7 @@
   .qr_code{
     width: 70px;
     height: 70px;
+    margin-top: 18px;
   }
   
   #footer .footer-top .footer-links ul li {
