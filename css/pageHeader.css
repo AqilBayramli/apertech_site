@@ -556,8 +556,8 @@
     gap:10px;
   }
 
-  #banner__image {
-    max-height: 500px; 
+  #banner__image{
+    max-height: 600px; 
   }
 }
 
@@ -640,6 +640,10 @@
   #banner__image h1 {
     font-size: 31px;
   }
+
+  #banner__image{
+    max-height: 550px; 
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -655,6 +659,10 @@
   .btn-style-one{
     font-size: 13px;
     padding: 6px 5px;
+  }
+
+  #banner__image{
+    max-height: 500px; 
   }
 }
 
@@ -703,8 +711,20 @@
   }
 
   #header.header-fixed {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     height: 80px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #banner__image{
+    max-height: 450px; 
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #banner__image{
+    max-height: 400px; 
   }
 }
 
@@ -730,6 +750,18 @@
   }
 }
 
+@media only screen and (max-width: 725px) {
+  #banner__image{
+    max-height: 360px; 
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #banner__image{
+    max-height: 310px; 
+  }
+}
+
 @media only screen and (max-width: 620px) {
   #banner__image h1 {
     font-size: 20px;
@@ -748,13 +780,29 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  #banner__image h1 {
-    font-size: 18px;
+@media only screen and (max-width: 565px) {
+  #banner__image{
+    max-height: 270px; 
+  }
+
+  #header__logo>a>img{
+    width:130px;
   }
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 490px) {
+  #banner__image{
+    max-height: 230px; 
+  }
+
+  #header__logo>a>img{
+    width:130px;
+  }
+
+  #header #header__logo img {
+    max-height: 50px;
+  }
+
   #banner__image h1 {
     font-size: 16px;
   }
@@ -763,30 +811,12 @@
     font-size: 11px;
   }
 
-
   .page__header__title h2{
     font-size: 31px;
   }
 
-  #header #header__logo img {
-    max-height: 50px;
-  }
-}
 
-@media only screen and (max-width: 450px) {
-  #banner__image {
-    width: 100%;
-    height: 280px;
-    background-size: cover;
-    position: relative;
-    background-repeat: no-repeat;
-  }
 
-  /* #banner__image >img {
-    height: 280px;
-  } */
-
-}
 
 @media only screen and (max-width: 420px) {
   #mobile-nav-toggle {
@@ -796,4 +826,15 @@
   .page__header__title h2{
     font-size: 28px;
   }
+
+  #banner__image{
+    max-height: 190px; 
+  }
+
+  .learn__btn{
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 2px 5px !important;
+  }
+}
 }
