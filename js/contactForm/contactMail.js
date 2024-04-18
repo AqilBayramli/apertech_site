@@ -92,8 +92,6 @@ function sendMail() {
         document.getElementById("companySolutions").value = "";
         document.getElementById("companyWeb").value = "";
 
-        console.log(res);
-        // alert("Your message sent successfully!!");
         showSuccessBanner();
 
       })
@@ -149,10 +147,6 @@ function removeError(fieldId) {
 }
 
 // Function to validate email address using indexOf
-// function isValidEmailWithDomainCheck(email) {
-//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//   return emailRegex.test(email);
-// }
 
 function isValidEmailWithDomainCheck(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

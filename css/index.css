@@ -3,7 +3,7 @@
 
 }
 
-.homepage__clients__content>h3{
+.homepage__clients__content>a>h3{
     text-align: center;
     color: black;
     font-weight: bold;
@@ -14,7 +14,7 @@
     margin-top: 100px;
 }
 
-.homepage__partners__content>h3{
+.homepage__partners__content>a>h3{
     text-align: center;
     color: black;
     font-weight: bold;
